@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+:root {
+  --flowra-bg: #ffffff;
+  --flowra-surface: #fafafa;
+  --flowra-border: #e4e4e7;
+  --flowra-text: #111111;
+}
+
+@theme inline {
+  --color-background: var(--flowra-bg);
+  --color-foreground: var(--flowra-text);
+  --font-sans: "Avenir Next", "Segoe UI", "Helvetica Neue", Helvetica,
+    "Nimbus Sans", sans-serif;
+  --font-mono: "SF Mono", "JetBrains Mono", "Menlo", "Consolas", monospace;
+}
+
+body {
+  background: var(--flowra-bg);
+  color: var(--flowra-text);
+  font-family: var(--font-sans);
+  text-rendering: geometricPrecision;
+}
+
+* {
+  border-color: var(--flowra-border);
+}
